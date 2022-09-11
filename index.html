@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Info</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header container">
+        <h1 class="header__title">TV Info</h1>
+    </header>
+    <main class="container">
+        <form class="search-form" name="search-form" id="search-form">
+            <input type="text" name="main-input" class="search-form__input" id="main-input">
+            <button type="button" class="search-form__search-button" id="search-button">Search</button>
+        </form>
+        <ul class="show-list" id="show-list">
+            <li class="show-list__placeholder">
+                <p class="show-list__placeholder-text">TV shows not found</p>
+            </li>
+        </ul>
+    </main>
+    <template>
+        <li class="show-list__item">
+            <img class="show-list__poster" src="" alt="">
+            <h2 class="show-list__name">
+                <a href="#" class="show-list__link"></a>
+            </h2>
+            <p class="show-list__summary"></p>
+        </li>
+    </template>
+    <script src="js/search.js"></script>
+</body>
+</html>
